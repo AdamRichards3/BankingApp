@@ -63,34 +63,35 @@ class BankAccount{
 		
 		do {
 			System.out.println("---------------------------------------------------");
-			System.out.println("Enter your option");
+			System.out.println("Enter your option: ");
 			System.out.println("---------------------------------------------------");
-			System.out.println(" ");
+			option = scanner.next().charAt(0);
+			System.out.println("\n");
 			
 			switch (option) {
 			
 			case 'A':
-				System.out.println("---------------------");
+				System.out.println("--------------------------------------------");
 				System.out.println("Balance = " + balance);
-				System.out.println("---------------------");
-				System.out.println(" ");
+				System.out.println("--------------------------------------------");
+				System.out.println("\n");
 				break;
 				
 			case 'B':
-				System.out.println("---------------------");
+				System.out.println("--------------------------------------------");
 				System.out.println("Enter an ammount to deposit");
-				System.out.println("---------------------");
+				System.out.println("--------------------------------------------");
 				
 				int amount = scanner.nextInt();
 				deposit(amount);
-				System.out.println(" ");
+				System.out.println("\n");
 				break;
 				
 			case 'D':
-				System.out.println("---------------------");
+				System.out.println("--------------------------------------------");
 				getPreviousTransaction();
-				System.out.println("---------------------");
-				System.out.println(" ");
+				System.out.println("--------------------------------------------");
+				System.out.println("\n");
 				break;
 				
 			case 'E':
