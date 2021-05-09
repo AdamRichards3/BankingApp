@@ -62,9 +62,9 @@ class BankAccount{
 		System.out.println("E : Exit");
 		
 		do {
-			System.out.println("---------------------------------------------------");
+			System.out.println("-------------------------------------------------");
 			System.out.println("Enter your option: ");
-			System.out.println("---------------------------------------------------");
+			System.out.println("-------------------------------------------------");
 			option = scanner.next().charAt(0);
 			System.out.println("\n");
 			
@@ -84,6 +84,16 @@ class BankAccount{
 				
 				int amount = scanner.nextInt();
 				deposit(amount);
+				System.out.println("\n");
+				break;
+				
+			case 'C':
+				System.out.println("--------------------------------------------");
+				System.out.println("Enter the amout you wish to withdraw ");
+				System.out.println("--------------------------------------------");
+				
+				int amount2 = scanner.nextInt();
+				withdraw(amount2);
 				System.out.println("\n");
 				break;
 				
