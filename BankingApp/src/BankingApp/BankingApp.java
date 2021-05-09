@@ -5,7 +5,8 @@ import java.util.Scanner;
 public class BankingApp {
 
 	public static void main(String[] args) {
-		
+		BankAccount obj = new BankAccount("Duciee", "00000001");
+		obj.showMenu();
 
 	}
 
